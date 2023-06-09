@@ -1,0 +1,55 @@
+.circle-wrap{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    padding: 15px;
+    border-radius: 50%;
+    border-color: black;
+    margin: 5px 10px;
+}
+
+.circle-wrap>div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+
+.big{
+    width: 20px;
+    height: 20px;
+}
+
+.middle{
+    width: 15px;
+    height: 15px;
+}
+
+.small {
+    width: 10px;
+    height: 10px;
+}
+
+.gray{
+    background-color: rgb(219, 219, 219);
+}
+
+.blue{
+    background-color: rgb(3, 104, 255);
+    color: white;
+}
+
+.red{
+    background-color: rgb(252, 55, 55);
+    color: white;
+}
+
+.green{
+    background-color: mediumseagreen;
+    color: white;
+}

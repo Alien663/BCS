@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import MyGrid from './MyGrid/MyGrid'
@@ -114,8 +114,7 @@ const GameList = (props) => {
     
     return(
         <div>
-            <MyGrid data={twoDData}>
-            </MyGrid>
+            <MyGrid data={twoDData}></MyGrid>
         </div>
     )
 }

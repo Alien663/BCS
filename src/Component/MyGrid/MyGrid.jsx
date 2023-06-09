@@ -10,9 +10,6 @@ const MyGrid = (props) => {
     return(<div style={{backgroundColor: "rgb(215 215 215)"}}>
     {
         data.map(row => {
-            console.log("------row------")
-            console.log(row)
-            console.log("---------------")
             return(
                 <Grid container spacing={1} justifyContent="center" alignItems="center">
                 {
