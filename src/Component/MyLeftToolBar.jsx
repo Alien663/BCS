@@ -12,7 +12,6 @@ import {
 
 const MyLeftToolBar = (props) => {
     const { open } = props
-    
     const ListItems = [
       {
         "Name": "Game List",
@@ -22,6 +21,11 @@ const MyLeftToolBar = (props) => {
       {
         "Name": "Score",
         "URL": "/gamescore",
+        "Icon": ""
+      },
+      {
+        "Name": "循環",
+        "URL": "/roundrobin",
         "Icon": ""
       },
       {
@@ -44,16 +48,15 @@ const MyLeftToolBar = (props) => {
     return(
       <Drawer variant="persistent"
           sx={{
-            width: 200,
-            flexShrink: 0,
-            [`& .MuiDrawer-paper`]: { width: 180, boxSizing: 'border-box' },
+              width: 200,
+              flexShrink: 0,
+              [`& .MuiDrawer-paper`]: { width: 180, boxSizing: 'border-box' },
           }}
-          open={open}
-          >
+          open={open}>
         <Toolbar />
         <List>
         {
-          ListItems.map(item => {
+            ListItems.map(item => {
             return(
               <ListItem>
                 <ListItemButton href={item.URL}

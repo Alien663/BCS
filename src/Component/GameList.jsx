@@ -1,7 +1,7 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
-import MyGrid from './MyGrid/MyGrid'
+import MyGrid from './MyComponent/MyGrid'
 import { Button } from '@mui/material'
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -102,11 +102,11 @@ const GameList = (props) => {
             temp.push({
                 md: 1,
                 children : <Button>
-                            <Item>
-                                {item.CompetitionID}<br/>
-                                {item.Team1}<br/>
-                                {item.Team2}
-                            </Item>
+                                <Item>
+                                    {item.CompetitionID}<br/>
+                                    {item.Team1}<br/>
+                                    {item.Team2}
+                                </Item>
                         </Button>
             })
         }
