@@ -112,6 +112,8 @@ const GameList = (props) => {
         }
     })
     
+    console.log(twoDData)
+
     return(
         <div>
             <MyGrid data={twoDData}></MyGrid>
